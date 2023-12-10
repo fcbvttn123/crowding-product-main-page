@@ -55,8 +55,66 @@ body a {
     opacity: .7;
 }
 
+.menu-box {
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-header .menu-box :is(.burger-menu, .close) {
+    color: white;
+    transform: scale(1.5);
+}
+
+.menu-box:hover {
+    opacity: .7;
+}
+
+@media (max-width: 1050px) {
+    .main-header {
+        padding: 3rem 2rem;
+    }
+}
+
 @media (max-width: 600px) {
     .main-header {
         background-image: url("./images/image-hero-mobile.jpg");
+        padding: 2rem 1.5rem;
+    }
+    .main-header .menu-box {
+        display: block;
+    }
+    .main-header .menu-box .close {
+        display: none;
+    }
+    .menu-box :is(.burger-menu, .close).invisible {
+        display: none;
+    }
+    .menu-box :is(.burger-menu, .close).visible {
+        display: block;
+    }
+    .main-header .links {
+        display: none;
+    }
+    .main-header .links.visible {
+        display: block;
+        position: absolute;
+        top: 85px;
+        right: 20px;
+        left: 20px;
+
+        background-color: white;
+        color: black;
+        margin: 0 auto;
+        border-radius: 7px;
+        cursor: pointer;
+
+        font-weight: var(--fw-bold);
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-header .links li {
+        padding: 1rem 0 1rem 1rem;
+        border-bottom: 1px solid rgb(224, 221, 221);
     }
 }
