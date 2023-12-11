@@ -154,10 +154,10 @@ body a {
 
 .main-section .top-layer {
     border: 1px solid rgb(236, 233, 233);
-    background-color: white;
-    position: relative;
-    padding: 2.5rem 2rem;
     border-radius: 10px;
+    background-color: white;
+    padding: 2.5rem 2rem;
+    position: relative;
 }
 
 .main-section .top-layer .logo-mastercraft {
@@ -267,5 +267,103 @@ body a {
     }
     .main-section .top-layer .buttons .bookmark-btn {
         display: none;
+    }
+}
+
+
+
+
+/* Main Section - Middle Layer */
+
+.main-section .middle-layer {
+    margin-top: 1rem;
+    border: 1px solid rgb(236, 233, 233);
+    border-radius: 10px;
+    background-color: white;
+    padding: 2.5rem 2rem;
+}
+
+.main-section .middle-layer .back-infor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 2rem;
+}
+
+.main-section .middle-layer .back-infor .item h1 {
+    font-weight: var(--fw-bold);
+    font-size: 1.7rem;
+}
+
+.main-section .middle-layer .back-infor .item p {
+    font-weight: var(--fw-medium);
+    color: var(--Dark-gray);
+    margin-top: .2rem;
+}
+
+.main-section .middle-layer .back-infor :is(.item:nth-child(2), .item:last-child) {
+    border-left: 1px solid rgb(220, 218, 218);
+    padding-left: 2.5rem;
+    margin-right: 2rem;
+}
+
+.main-section .middle-layer .progress-bar {
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(232, 228, 228);
+    margin-top: 2.5rem;
+}
+
+.main-section .middle-layer .progress-bar .indicator {
+    width: 80%;
+    height: 100%;
+    background-color: var(--Moderate-cyan);
+    border-radius: inherit;
+}
+
+@media (max-width: 900px) {
+    .main-section .middle-layer .back-infor :is(.item:nth-child(2), .item:last-child) {
+        padding-left: 1rem;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 440px) {
+    .main-section .middle-layer .back-infor {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 1.5rem;
+    }
+    .main-section .middle-layer .back-infor .item :is(h1, p) {
+        text-align: center;
+    }
+    .main-section .middle-layer .back-infor :is(.item:nth-child(2), .item:last-child) {
+        border-left: none;
+        padding-left: 0;
+        margin-right: 0;
+    }
+    .main-section .middle-layer .back-infor :is(.item:nth-child(2), .item:first-child) {
+        padding-bottom: 1.5rem;
+        position: relative;
+    }
+    .main-section 
+    .middle-layer 
+    .back-infor 
+    .item:first-child::before,
+
+    .main-section 
+    .middle-layer 
+    .back-infor 
+    .item:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        height: 1px;
+        width: 70px;
+        background-color: rgb(220, 218, 218);
     }
 }
