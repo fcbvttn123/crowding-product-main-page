@@ -367,3 +367,104 @@ body a {
         background-color: rgb(220, 218, 218);
     }
 }
+
+
+
+
+/* Main Section - Bottom Layer */
+
+.main-section .bottom-layer {
+    margin-top: 1rem;
+    border: 1px solid rgb(236, 233, 233);
+    border-radius: 10px;
+    background-color: white;
+    padding: 2.5rem 2rem;
+}
+
+.main-section .bottom-layer .text-box h1 {
+    font-weight: var(--fw-bold);
+    font-size: 1.3rem;
+}
+
+.main-section .bottom-layer .text-box p {
+    font-weight: var(--fw-regular);
+    color: var(--Dark-gray);
+}
+
+.main-section .bottom-layer .text-box p:nth-child(2) {
+    margin: 1.8rem 0;
+}
+
+.main-section .bottom-layer .box {
+    border-radius: inherit;
+    border: inherit;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    margin-top: 1.8rem;
+}
+
+.main-section .bottom-layer .box:last-child {
+    opacity: .6;
+}
+
+.main-section .bottom-layer .box :is(.row1, .row3), 
+.main-section .bottom-layer .box .row3 .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-section .bottom-layer .box .row3 .left {
+    column-gap: .5rem;
+}
+
+.main-section .bottom-layer .box .row1 h1 {
+    font-weight: var(--fw-bold);
+}
+
+.main-section .bottom-layer .box .row1 a {
+    color: var(--Moderate-cyan);
+    font-weight: var(--fw-medium);
+}
+
+.main-section .bottom-layer .box .row2 {
+    color: var(--Dark-gray);
+    font-weight: var(--fw-regular);
+    margin: 1rem 0;
+}
+
+.main-section .bottom-layer .box .row3 .left .number {
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.main-section .bottom-layer .box .row3 .left .text {
+    font-weight: var(--fw-regular);
+    color: var(--Dark-gray);
+}
+
+.main-section .bottom-layer .box .row3 button {
+    color: white;
+    background-color: var(--Moderate-cyan);
+    border-radius: 30px;
+    cursor: pointer;
+    
+    height: 42px;
+    display: grid;
+    place-content: center;
+    padding: 0 1.5rem;
+    font-weight: var(--fw-medium);
+}
+
+
+.main-section .bottom-layer .box .row3 button:hover {
+    background-color: var(--Dark-cyan);
+}
+
+.main-section .bottom-layer .box:last-child .row3 button {
+    background-color: var(--Dark-gray);
+}
+
+.main-section .bottom-layer .box:last-child .row3 button:hover {
+    background-color: var(--Dark-gray);
+}
