@@ -468,3 +468,17 @@ body a {
 .main-section .bottom-layer .box:last-child .row3 button:hover {
     background-color: var(--Dark-gray);
 }
+
+@media (max-width: 430px) {
+    .main-section .bottom-layer .box :is(.row1, .row3) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .main-section .bottom-layer .box .row1 {
+        row-gap: .5rem;
+    }
+    .main-section .bottom-layer .box .row3 {
+        row-gap: 1rem;
+    }
+}
